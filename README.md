@@ -783,4 +783,181 @@
 #     Di.append(v)
 # if len(coordinates) == sum(Di):
 #     print('true')
+# sentence = "hellohello hellohellohello"
+# searchWord = "ell"
+# l = sentence.split()
+# l1 = []
+# if searchWord in sentence:
+#     for i, word in enumerate(l,1):
+#         if any(searchWord in ms for ms in l):
+#             if word[0:len(searchWord)] == searchWord:
+#                 l1.append(i)
+#     if len(l1) > 1:
+#         print(min(l1))
+#     elif len(l1) == 0:
+#         print(-1)
+# else:
+#     print(-1)
+# sequence = "ababc"
+# word = "ac"
+# so = ""
+# # for i in sequence:
+# if sequence.count(word) == 1:
+#     print(sequence.count(word))
+# elif sequence.count(word) >1:
+#    so = sequence.count(word) * word
+#    if so in sequence:
+#        print(so.count(word))
+# else:
+#     print(0)
+# heights = [1,1,4,2,1,3]
+# s = sorted(heights)
+# c = 0
+# for i in range(0,len(heights)):
+#     if heights[i] == s[i]:
+#         c += 1
+# print(len(heights) - c)
+
+# nums = [0,0,1,1,1,2,2,3,3,4]
+# # s = set(nums)
+# # print(len(s))
+# # l1 = list(s)
+# # # for k in s:
+# # #     l1.append(s)
+# # print(l1)
+# # l = len(nums) - len(s)
+# # st = l * '_'
+# # l2 = []
+# # for i in st:
+# #     l2.append(i)
+# # print(l2)
+# # print(l1 + l2)
+# s = set(nums)
+# le = len(s)
+# l1 = list(s)
+# print(l1)
+
+# num = 30
+# l = []
+# for i in range(1,num+1):
+#     l.append(str(i))
+# print(l)
+# [29, 23] [min max min max]
+num = 4009
+# l1 = []
+# for i in str(num):
+#     l1.append(int(i))
+# m1 = min(l1)
+# l1.remove(m1)
+# b1 = max(l1)
+# l1.remove(b1)
+# m2 = min(l1)
+# l1.remove(m2)
+# li = [m1,b1,m2,l1[0]]
+# v1 = ''
+# v2 = ''
+# for k in li[0:2]:
+#     v1 += str(k)
+# for r in li[2:4]:
+#     v2 += str(r)
+# print(int(v1) + int(v2))
+# haystack = "leetcode"
+# needle = "leeto"
+# print(haystack.index(needle))
+# nums1 = [0]
+# nums2 = [1]
+# l1 = []
+# l2 = []
+# for i in nums1:
+#     if i > 0:
+#         l1.append(i)
+# for j in nums2:
+#     if j > 0:
+#         l2.append(j)
+# print(sorted(l1 + l2))
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+# class Solution:
+#     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
+#         c = head
+#         while c:
+#             while c.next and c.next.val == c.val:
+#                 c.next = c.next.next
+#             c = c.next
+#         return head
+# num = 3, t = 2
+# x - t = num + t
+# x = num + t + t
+# x = 4 + 2 = 6
+# n = -1
+# if n < 0:
+#     print('false')
+# else:
+#     for i in range(1,n):
+#         if i ** 3 == n:
+#             print( 'true' )
+#
+# s = str(num)
+# c = 0
+# for i in s:
+#     if num % int(i) == 0:
+#         c += 1
+# l = [-1,-2,-3]
+# print(sum(l))
+# n = 111
+# sn = str(n)
+# ev = sn[::2]
+# ov = sn[1::2]
+# print(ev)
+# print(ov)
+# ovl = ['-' + i for i in ov]
+# print(ovl)
+# v1 = 0
+# v2 = 0
+# for i in ev:
+#     v1 += int(i)
+# for j in ovl:
+#     v2 += int(j)
+# print(v1)
+# print(v2)
+# n = 19006
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         if i + j == n:
+#             if '0' not in str(i) and '0' not in str(j):
+#                 l1 = [i,j]
+# print(l1)
+# n = 500
+# if n % 2 == 0:
+#     n4 = n/2
+#     if '0' not in str(n4):
+#         l1 = [int(n/2),int(n/2)]
+#         print(l1)
+#     else:
+#         n5 = n4 - 1
+#         n6 = n5 + 2
+#         print(n5,n6)
+# else:
+#    n1 = n - 1
+#    n2 = n1/2 +1
+#    n3 = n1/2
+#    l2 = [int(n2), int(n3)]
+#    print(l2)
+# num = "4206"
+# l = []
+# if int(num) % 2 == 0:
+#     for i in num:
+#         if int(i) % 2 != 0:
+#             l.append(int(i))
+#     if len(l) == 0:
+#        print('')
+#     else:
+#         print(str(max(l)))
+# else:
+#     print(num)
+
+
 
