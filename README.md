@@ -958,6 +958,209 @@ num = 4009
 #         print(str(max(l)))
 # else:
 #     print(num)
+import datetime
+# l = []
+# for i in prices:
+#     l.append(i)
+# l1 = l + prices
+# for j in l1:
+#     for k in l1:
+#         print(k)
+prices = [1,2,3]
+money = 5
+# for i in prices:
+#     for j in prices:
+#         if i + j < money:
+#             s =
+#            print(i + j)
+#         else:
+#             print(money)
+# m1 = min(prices)
+# print(m1)
+# r = prices.remove(m1)
+# m2 = min(prices)
+# print(m2)
+# s = int(m1) + int(m2)
+# if s <= money:
+# emails = ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]
+# s = '@'
+# p = '+'
+# for i in emails:
+#     if p not in i:
+#         print(i)
+# nums = [-7,-3,2,3,11]
+# l1 = []
+# for i in nums:
+#     l1.append(i * i)
+# print(sorted(l1))
+# startTime = [9,8,7,6,5,4,3,2,1]
+# endTime = [10,10,10,10,10,10,10,10,10]
+# queryTime = 5
+# l = []
+# for i in startTime:
+#     for j in endTime:
+#         if j - i == queryTime:
+#             l.append(i)
+# print(len(l))
+# list1 = [1,2,3]
+# list2 = [3,2,7]
+#
+# # Check if both lists have the same length
+# if len(list1) == len(list2):
+#     difference = [list1[i] - list2[i] for i in range(len(list1))]
+#     print(difference)
+# else:
+#     print("Both lists must have the same length for element-wise difference.")
+# salary = [1000,2000,3000]
+# salary.remove(min(salary))
+# salary.remove(max(salary))
+# s = sum(salary)
+# av = s / len(salary)
+# print(av)
+# s = "codeleet"
+# indices = [4,5,6,7,0,2,1,3]
+# ss = ''
+# for i in indices:
+# #     ss += s[i]
+# # print(ss)
+#     print(s[i])
+# word1 = ["ab", "c"]
+# word2 = ["a", "bc"]
+# w1 = ''
+# for i in word1:
+#     w1 += i
+# print(w1)
+# w2 = ''
+# for j in word2:
+#     w2 += j
+# print(w1)
+# print(w1 == w2)
+# paragraph = "Bob hit a ball, the hit BALL flew far after it was hit."
+# banned = ["hit"]
+# l = paragraph.split()
+# for i in l:
+#     if l.count(i.lower()) > 1 and i not in banned:
+#         print(i.lower())
+# details = ["1313579440F2036","2921522980M5644"]
+# l = []
+# for i in details:
+#     l.append(i[11:13])
+# c = 0
+# for j in l:
+#     if int(j) > 60:
+#         c += 1
+# print(c)
+# title = "capiTalIze tHe titLe"
+# s = title.split()
+# s1 = ''
+# for i in s:
+#     s1 += i.capitalize()
+# print(s1)
+# words = ["def","ghi"]
+# l = []
+# for i in words:
+#     if i == i[::-1]:
+#         l.append(i)
+# if len(l) > 0:
+#     print(l[0])
+# else:
+#     print('')
+# s ="sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s"
+# l = s.split()
+# l1 = []
+# for i in l:
+#     if i.isnumeric():
+#         l1.append(int(i))
+# l2 = sorted(l1)
+# for i in l1:
+#     if l1.count(i) > 1:
+#         print('false')
+# if l1 == l2:
+#     print('true')
+# else:
+#     print('false')
 
+# l = [3,2,4,1]
+# l1 = [1, 2, 3, 4]
+# l2 = sorted(l)
+# if l1 == l2:
+#     print('yes')
+# else:
+#     print('false')
+# l = [1,2,3,4,4]
+# for i in l:
+#     if l.count(i) > 1:
+#         print('false')
+# word = "xyxzxe"
+# ch = "z"
+# if ch not in word:
+#     print(word)
+# else:
+#     i = word.index(ch)
+#     fs = word[0:i + 1]
+#     r = fs[::-1]
+#     ss = word[i + 1:]
+#     print(r + ss)
+# s = "abccbaacz"
+# l = []
+# for i in s:
+#     if s.count(i) > 1:
+#         l.append(i)
+# print(l)
+# s = "foobar"
+# letter = "o"
+# if letter in s:
+#     print(round(s.count(letter)/ len(s) * 100))
+# else:
+#     print(0)
+# s = "anagram"
+# t = "nagaram"
+# s1 = sorted(s)
+# t1 = sorted(t)
+# print(s1)
+# print(t1)
+# print(s1 == t1)
+from datetime import datetime
 
-
+# Input date string
+# words = ["pay","attention","practice","attend"]
+# pref = "at"
+# c = 0
+# for i in words:
+#     if i[0:len(pref)] == pref:
+#         c += 1
+# print(c)
+# patterns = ["a","b","c"]
+# word = "aaaaabbbbb"
+# c = 0
+# for i in patterns:
+#     if i in word:
+#         c += 1
+# print(c)
+# s = ""
+# t = "y"
+# for i in t:
+#     if i not in s:
+#         print(i)
+# nums = [1,2]
+# s = set(nums)
+# s.remove(max(s))
+# s.remove(max(s))
+# l = []
+# if len(nums) < 3:
+#     print(max(nums))
+# else:
+#     for i in s:
+#         l.append(i)
+#     print(l[0])
+# nums = [5,20,66,1314]
+# c1 = 0
+# c2 = 0
+# for i in nums:
+#     if i < 0:
+#         c1 += 1
+# for j in nums:
+#     if j > 0:
+#         c2 += 1
+# l = [c1,c2]
+# print(max(l))
