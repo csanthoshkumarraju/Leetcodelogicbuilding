@@ -1164,3 +1164,59 @@ from datetime import datetime
 #         c2 += 1
 # l = [c1,c2]
 # print(max(l))
+# grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
+# c = 0
+# for i in grid:
+#     for j in i:
+#         if j < 1:
+#             c += 1
+# print(c)
+# words = ["ab","ba","cc"]
+# c = 0
+# for i in words:
+#     for j in words:
+#         if i == j[::-1] and i != j:
+#             c += 1
+# if c == 0:
+#     print(0)
+# else:
+#     print(int(c/2))
+# nums = [13,25,83,77]
+# s  = ''
+# l = []
+# for i in nums:
+#     s += str(i)
+# for j in s:
+#     l.append(int(j))
+# print(l)
+# d = {1:'abc',7 : 'hui',2: 'fdv'}
+# print(sorted(d))
+# nums = [5,5,5]
+# k = 2
+# s = 0
+# m = max(nums)
+# for i in range(m,m + k):
+#     s += i
+# print(s)
+# nums = [0,1,4,6,7,10]
+# diff = 3
+# for i in nums:
+#     for j in nums:
+#         if i - j == diff:
+#             print(i)
+# nums = [1,2,5,2,3]
+# target = 2
+# nums.sort()
+# print([i for i,x in enumerate(nums) if x == target])
+# words1 = ["a","ab"]
+# words2 = ["a","a","a","ab"]
+# l = []
+# for i in words1:
+#     for j in words2:
+#         if i == j:
+#             l.append(i)
+# l2 = []
+# for j in l:
+#     if l.count(j) == 1:
+#         l2.append(j)
+# print(len(l2))
