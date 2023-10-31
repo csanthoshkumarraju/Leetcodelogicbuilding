@@ -1,0 +1,108 @@
+# p1 = [0,0]
+# p2 = [1,1]
+# p3 = [1,0]
+# p4 = [0,1]
+# p1d = abs(p1[1] - p1[0])
+# p2d = abs(p2[1] - p2[0])
+# p3d = abs(p3[1] - p3[0])
+# p4d = abs(p4[1] - p4[0])
+# print(p1d == p2d and p3d == p4d)
+# nums = [1,2]
+# l = nums[::2]
+# print(sum(l))
+# s = "sayhelloworld"
+# dictionary = ["hello","world"]
+# s1 = ''
+# s2 = ''
+# for i in dictionary:
+#     for j in i:
+#         s1 += j
+# for k in s:
+#     if k not in s1:
+#         s2 += k
+# print(len(s2))
+# Linked list implementation in Python
+# s = "aca"
+# l = []
+# for i in range(0,len(s)+1):
+#     for j in range(0,len(s)+1):
+#         l.append(s[i:j])
+# for k in l:
+#     if k == k[::-1] and len(k) > 1:
+#         print(k)
+# x = 120
+# s = ''
+# for i in str(x):
+#     s += i
+# s1 = ''
+# s2 = ''
+# if '-' in s:
+#     for j in s:
+#         if j != '-':
+#             s1 += j
+#     print(int('-' + s1[::-1]))
+# elif s[-1] == 0:
+#     s2 = s[0:-2]
+#     print(int(s2[::-1]))
+# else:
+#     print(int(s[::-1]))
+# nums = [5,7,7,8,8,10]
+# target = 8
+# print([i for i, j in enumerate(nums) if j == target])
+# nums = [1,2,3]
+# l = []
+# for i in nums:
+#     for j in nums:
+#         for k in nums:
+#             l.append([i,j,k])
+# for y in l:
+#     if len(set(y)) == len(y):
+#         print(y)
+# nums = [2,0,2,1,1,0]
+# print(sorted(nums))
+# nums = [1,3,4,2,2]
+# for i in nums:
+#     if nums.count(i) > 1:
+#         print(i)
+# n = 8
+# c = 0
+# if n % 2 == 0:
+#     for i in range(1,n):
+#         if n % 2 == 0:
+#             n = n/2
+#             c += 1
+#     print(c)
+# else:
+#     n = n + 1
+#     for j in range(1,n):
+#         if n % 2 == 0:
+#             n = n / 2
+#             c += 1
+#     print(c + 1)
+# c = 4
+# for i in range(1,c+1):
+#     for j in range(1,c+1):
+#         if i * i + j * j == c:
+#             print(i,j)
+# matrix = [[-1,0,-1],[-2,1,3],[3,2,2]]
+# l = []
+# for i in matrix:
+#     for j in i:
+#         l.append(j)
+# m1 = min(l)
+# ind = l.index(m1)
+# l[ind] = abs(m1)
+# m2 = min(l)
+# ind1 = l.index(m2)
+# l[ind1] = abs(m2)
+# print(sum(l))
+
+
+
+
+
+
+
+
+
+
