@@ -491,15 +491,92 @@
 # for le in str(su):
 #     rel.append(int(le))
 # print(rel)
-
-
-
-
-
-
-
-
-
-
-
-
+# a = 2147483647
+# b = [2,0,0]
+# s = ''
+# for i in b:
+#     s += str(i)
+# print(a ** int(s))
+# messages = ["Hello userTwooo","Hi userThree","Wonderful day Alice","Nice day userThree"]
+# senders = ["Alice","userTwo","userThree","Alice"]
+# print(messages.spl)
+# nums = [4,3,2,7,8,2,3,1]
+# rl = []
+# for i in nums:
+#     if nums.count(i) == 2:
+#         rl.append(i)
+# o = set(sorted(rl))
+# print(list(o))
+# s = "the sky is blue"
+# l = s.split()
+# rl = l[::-1]
+# rs = ' '
+# rs = rs.join(rl)
+# print(rs)
+# s = "cbacdcbc"
+# l = []
+# for j in s:
+#     l.append(j)
+# se = set(l)
+# sse = sorted(se)
+# rs = ''
+# for i in sse:
+#     rs += i
+# print((rs))
+# s = "3[a]2[bc]"
+# j = ["a"]
+# m = 3 * j
+# rs = ''.join(m)
+# print(rs)
+# "abc" "abcabc" "abcabcabc"
+# word = "aaa"
+# ac = word.count('a')
+# bc = word.count('b')
+# cc = word.count('c')
+# l = [ac,bc,cc]
+# ma = max(l)
+# mi = min(l)
+# l.remove(ma)
+# ma2 = max(l)
+# print(ma - mi + ma - ma2)
+# 1 - 0 + 1 - 0
+# 3 - 0 + 3 - 0
+# s = "erase*****"
+# l = []
+# ind = [inde for inde,e in enumerate(s) if e == '*']
+# pind = []
+# for q in ind:
+#     pind.append(q-1)
+# for i in s:
+#     l.append(i)
+# print(l)
+# rl = []
+# for f in pind:
+#     rl.append(l[f])
+# print(rl)
+# al = [e for e in l if e not in rl]
+# print(al)
+# for k in al:
+#     if '*' in al:
+#         al.remove('*')
+# print(al)
+# s = "Aabb"
+# l = []
+# for i in s:
+#     l.append(i)
+# print(sorted(l))
+# nums = [1,13,10,12,31]
+# nums2 = []
+# for i in nums:
+#     nums2.append(int(str(i)[::-1]))
+# nums += nums2
+# print(len(set(nums)))
+# arr = [4,2]
+# for i in arr:
+#     if arr.count(i) == arr.count(-i):
+#         print('true')
+#     else:
+#         print('false')
+# 5 15 25 35
+# 5x1 + 0 5x2 + 5 5x3 + 10 5x4 + 15
+# 5x 1 + 5 x 0 5 x 2 + 5x1
