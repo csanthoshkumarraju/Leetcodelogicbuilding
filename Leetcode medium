@@ -580,3 +580,346 @@
 # 5 15 25 35
 # 5x1 + 0 5x2 + 5 5x3 + 10 5x4 + 15
 # 5x 1 + 5 x 0 5 x 2 + 5x1
+# l = []
+# l.append([1,2])
+# l.append([3,4])
+# print(l)
+# skill = skill = [1,1,2,3]
+# l = []
+# for i in range(1,len(skill)+1):
+#     if len(skill) > 0:
+#         l.append([min(skill),max(skill)])
+#         skill.remove(min(skill))
+#         skill.remove(max(skill))
+# l1 = []
+# for j in l:
+#     l1.append(sum(j))
+# s = set(l1)
+# v1 = int(list(s)[0])
+# v = sum(l1) / len(l1)
+# l2 = []
+# if v1 == v:
+#     for k in l:
+#         mu = k[0] * k[1]
+#         l2.append(mu)
+#     print(sum(l2))
+# else:
+#     print(-1)
+# s = "abcd"
+# sources = ["a", "cd"]
+# targets = ["eee", "ffff"]
+# for i,j in sources,targets:
+#     print(s.replace(i,j))
+# s = "aab"
+# l = []
+# for i in s:
+#     l.append(i)
+# e = sorted(l)
+# print(l)
+# print(e)
+# print(l[::2])
+# print(l[::3])
+# n = 5
+# s = ''
+# for i in range(1,n+1):
+#     s += '0' + str(i)
+# print(s)
+# s = "0090089"
+# l = []
+# for i in s:
+#     l.append(int(i))
+# while 0 in l:
+#     l.remove(0)
+# print(l)
+# if l[0] - l[-1] == len(l) - 1:
+#     print('true')
+# else:
+#     print('false')
+# ------------------
+
+# ------------------
+# chars = ["a"]
+# s = set(chars)
+# l = sorted(list(s))
+# rs1 = []
+# for i in l:
+#     rs1.append(str(i))
+#     rs1.append(str(chars.count(i)))
+# for k in rs1:
+#     if chars.count(k) == 1:
+#         rs1.remove('1')
+# rs2 = (''.join(rs1))
+# rl = []
+# for h in rs2:
+#     rl.append(h)
+# print("Return",len(rl),',','and the first',len(rl) ,'characters of the input array should be: ',rl)
+# n = 7
+# s = ''
+# for i in range(1,n):
+#     s += '1'* i
+#     s += '2' * (i+1 )
+# l = s[0:n]
+# print(l.count('1'))
+# nums = [1,2,1,3,2,5]
+# r = []
+# for i in nums:
+#     if nums.count(i) == 1:
+#         r.append(i)
+# print(r)
+# nums = [0,0,1,1,1,1,2,3,3]
+# ma = len(nums)
+# nu1 = nums
+# for j in nu1:
+#     if nu1.count(j) > 2:
+#         nu1.remove(j)
+# mi = len(nu1)
+# print(ma,mi)
+# rl = ['_'] * (ma - mi)
+# print(len(nu1),',',nu1 + rl)
+# root = [0,1,2,0,0,0,0,1,1,1,1,2,2,2,2]
+# for i in root:
+#     for i in range(1,len(root)+1):
+#         print(root[7 * i : (7*i) + 2]) #= reversed(root[7 * i : (7*i) + 2])
+# print(root)
+# #[1,7,15]
+# #[1:3],[7:15]
+# nums = ["3","6","7","10"]
+# l = []
+# for i in nums:
+#     l.append(int(i))
+# s= sorted(l)
+# print(str(s[-4]))
+# nums = [991,338,38]
+# l = []
+# for i in nums:
+#     l.append(str(i))
+# s = sorted(l)
+# rl = []
+# for j in s:
+#     rl.append(int(j))
+# print(rl)
+# nums = [1,2,3,4]
+# queries = [[1,0],[-3,1],[-4,0],[2,3]]
+# for i in queries:
+#     nums[i[1]] += i[0]
+# print(nums)
+# s = "LeetcodeHelpsMeLearn"
+# spaces = [8,13,15]
+# # for i in spaces:
+# #     s[i] += ' '
+# r = ' '.join(spaces)
+# # print(r)
+# nums = [-1,1,0,-3,3]
+# l = []
+# p = 1
+# for i in nums:
+#     for j in range(0,len(nums)+1):
+#         print(i,j)
+#         # if i != nums[j]:
+#         #     p *= i
+#         #     l.append(p)
+# # for j in nums:
+# #     if j != 0:
+# #         l.append(int(p/j))
+# print(l)
+# #[24,12,8,6]
+# # 24/1 24/2 24/3 24/4
+# 24 12 8 6
+# l = []
+# matrix = [[1,2,3],[4,5,6],[7,8,9]]
+# for j in range(0,len(matrix)):
+#     for i in matrix:
+#         l.append(i[j])
+# l1 = []
+# for k in range(0,len(matrix)):
+#     l1.append(l[k*len(matrix):(k+1)*len(matrix)])
+# rl = []
+# for h in l1:
+#     rl.append(h[::-1])
+# print(rl)
+# nums = [3,6,9,1]
+# n1 = sorted(nums)
+# l = []
+# k = len(nums)
+# if len(nums) > 1:
+#     for j in range(0,k):
+#         if j < k -1:
+#              l.append(n1[j +1] - n1[j])
+#     print(max(l))
+# else:
+# #     print(nums[0])
+# words = ["i","love","leetcode","i","love","coding"]
+# k = 2
+# rl = []
+# l = []
+# for i in words:
+#     l.append(words.count(i))
+# s = list(set(l))
+# s1 = s[::-1]
+# for j in s1:
+#     for d in words:
+#         if words.count(d) == j:
+#             pass
+#             rl.append(d)
+# rl1 = []
+# for h in rl:
+#     if h not in rl1:
+#         rl1.append(h)
+# print(rl1[0:k])
+# nums = [1]
+# k = 1
+# l = []
+# for i in nums:
+#     l.append(nums.count(i))
+# s = sorted(list(set(l)))
+# l1 = s[::-1]
+# rl = []
+# for j in l1:
+#     for k in nums:
+#         if nums.count(k) == j:
+#             rl.append(k)
+# rl1 = []
+# for h in rl:
+#     if h not in rl1:
+#         rl1.append(h)
+# print(rl1[0:k])
+# # print(l)
+# print(rl)
+# print(rl1)
+# print(rl1[0:k])
+# word = "ltcd"
+# s = ''
+# for i in range(len(word)):
+#     for j in range(i+1,len(word)+1):
+#         s += word[i:j]
+# c = 0
+# for h in s:
+#     if (h == 'a' or h == 'e' or h == 'i' or
+#         h == 'o' or h == 'u' or h == 'A' or
+#         h == 'E' or h == 'I' or h == 'O' or
+#         h == 'U'):
+#         c += 1
+# print(c)
+# nums = [-4,-5,-4]
+# n = sorted(nums)[::-1]
+# l = []
+# for i in n:
+#     if i < 0:
+#         l.append(i)
+# for j in l:
+#     for k in l:
+#         if len(l) % 2 != 0:
+#             l.remove(k)
+# pl = []
+# for f in nums:
+#     if f > 1:
+#         pl.append(f)
+# rl = l + pl
+# pr = 1
+# for d in rl:
+#     pr *= d
+# print(pr)
+# nums = [1,3,6]
+# k = 2
+# l = []
+# for i in nums:
+#     if i > k:
+#         l.append(i - k)
+#     else:
+#         l.append(i + k)
+# print(max(l)-min(l))
+# nums = [4,3,6,16,8,2]
+# c = 1
+# for i in set(nums):
+#     if i * i in nums:
+#         c += 1
+# if c == 1:
+#     print(-1)
+# else:
+#     print(c)
+# nums = [1,2]
+# operations = [[1,3],[2,1],[3,2]]
+# for i,j in zip(nums,operations):
+#     if j[0] in nums:
+#         nums[nums.index(j[0])] = j[1]
+# print(nums)
+# changed = [6,3,0,1]
+# s = changed
+# l1 = [i for i in s[0:int(len(s)/2)]]
+# l2 = [j for j in s[int(len(s)/2):]]
+# rl = []
+# for i in l1:
+#     rl.append(i * 2)
+# if rl == l2:
+#     print(l1)
+# else:
+#     print([])
+# s = "abcde"
+# s2 = "abcdefghijklmnopqrstuvwxyz"
+# l = []
+# for i in range(0,10):
+#     for j in range(0, 10):
+#         if s[i:j] in s2:
+#             l.append(s[i:j])
+# l1 = []
+# for k in l:
+#     l1.append(len(k))
+# print(max(l1))
+# s = "aabccabba"
+# s1 = ''
+# for i in range(0,len(s)-1):
+#     if s[i] != s[0-(i+1)]:
+#          s1 += s[i]
+# print(s1)
+# word1 = "sea"
+# word2 = "eat"
+# c = 0
+# for i in word1:
+#     if i in word2:
+#         c += 1
+# print(c)
+# s = "deeedbbcccbdaa"
+# k = 3
+# l  = set(s)
+# l1 = []
+# for i in l:
+#      l1.append(i * k)
+# print(l1)
+# x = 3
+# y = 5
+# bound = 15
+# l = []
+# for i in range(0,y +1):
+#     for j in range(0,y+1):
+#         l.append(x ** i+y **j)
+# s = sorted(list(set(sorted(l))))
+# rl = [d for d in s if d <= bound]
+# print(rl)
+# n = 1
+# c = 0
+# for i in range(0,10**n):
+#     if len(str(i)) == len(set(str(i))):
+#         c += 1
+# print(c)
+# nums = [2,3,5]
+# l = []
+# for i in range(0,len(nums)):
+#     for j in nums:
+#        l.append(abs(nums[i] - j))
+# l1 = []
+# for h in range(0,len(nums)):
+#         l1.append(sum(l[(h * len(nums)):((h+1)*len(nums))]))
+# print(l1)
+# arr1 = [1,1,1,1,1]
+# arr2 = [1,0,1]
+# a1 = ''
+# for i in arr1:
+#     a1 += str(i)
+# print(a1)
+# a2 = ''
+# for j in arr2:
+#     a2 += str(j)
+# print(a2)
+# print(int(a1,2))
+# print()
+
