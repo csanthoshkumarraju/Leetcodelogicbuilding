@@ -1,925 +1,1222 @@
-# p1 = [0,0]
-# p2 = [1,1]
-# p3 = [1,0]
-# p4 = [0,1]
-# p1d = abs(p1[1] - p1[0])
-# p2d = abs(p2[1] - p2[0])
-# p3d = abs(p3[1] - p3[0])
-# p4d = abs(p4[1] - p4[0])
-# print(p1d == p2d and p3d == p4d)
-# nums = [1,2]
-# l = nums[::2]
-# print(sum(l))
-# s = "sayhelloworld"
-# dictionary = ["hello","world"]
-# s1 = ''
-# s2 = ''
-# for i in dictionary:
-#     for j in i:
-#         s1 += j
-# for k in s:
-#     if k not in s1:
-#         s2 += k
-# print(len(s2))
-# Linked list implementation in Python
-# s = "aca"
-# l = []
-# for i in range(0,len(s)+1):
-#     for j in range(0,len(s)+1):
-#         l.append(s[i:j])
-# for k in l:
-#     if k == k[::-1] and len(k) > 1:
-#         print(k)
-# x = 120
-# s = ''
-# for i in str(x):
-#     s += i
-# s1 = ''
-# s2 = ''
-# if '-' in s:
-#     for j in s:
-#         if j != '-':
-#             s1 += j
-#     print(int('-' + s1[::-1]))
-# elif s[-1] == 0:
-#     s2 = s[0:-2]
-#     print(int(s2[::-1]))
+# # Leetcode problem 1
+# # 1. Two Sum
+# l = [1,2,3,4]
+# # # print(l.index(3)+l.index(4))
+# # # print(l[0]+l[1])
+# # sum = 0
+# # for i in l:
+# #     sum += i
+# # print(sum)
+# le = len(l)
+# # print(l[0:])
+# for i in range(len(l)):
+#     sum_index = [i,l[i:]]
+#     print(sum(sum_index))
+# # possibilities of sums= [(1,2),(1,3),(1,4),(2,3),(2,4),(3,4)]
+# # possibilities of indices =[(0,1/0,2,0,3,1,2/1,3/2,3)]
+#  palindrome
+# class Palindrome:
+#   def __init__(self,x):
+#      self.x = x
+#   def isPalindrome(self):
+#       reverse_integer = str(self.x)
+#       if str(self.x) == reverse_integer[::-1]:
+#           print('true')
+#       else:
+#           print('false')
+# nu = Palindrome(input())
+# nu.isPalindrome()
+# import re
+#
+# #Check if the string starts with "The" and ends with "Spain":
+#
+# txt = "The rain in Spain"
+# x = re.search("^The$", txt)
+#
+# if x:
+#   print("YES! We have a match!")
 # else:
-#     print(int(s[::-1]))
-# nums = [5,7,7,8,8,10]
-# target = 8
-# print([i for i, j in enumerate(nums) if j == target])
-# nums = [1,2,3]
+#   print("No match")
+# creating an empty list
+
+# lst = []
+# n = int(input("Enter number of elements : "))
+# for i in range(0, n):
+# 	ele = int(input())
+# 	lst.append(ele)
+# print(lst)
+# lst1 = []
+# n1 = int(input("Enter number of elements : "))
+# for i in range(0, n1):
+# 	ele1 = int(input())
+# 	lst1.append(ele1)
+# print(lst1)
+# l3 = lst + lst1
+# print(sorted(l3))
+
+# def sortedl():
+# 	lst = []
+# 	n = int(input("Enter number of elements : "))
+# 	for i in range(0, n):
+# 		ele = int(input())
+# 		lst.append(ele)
+# 	print(lst)
+# 	lst1 = []
+# 	n1 = int(input("Enter number of elements : "))
+# 	for i in range(0, n1):
+# 		ele1 = int(input())
+# 		lst1.append(ele1)
+# 	print(lst1)
+# 	re = lst + lst1
+# 	print(re)
+# 	print(sorted(re))
+# sortedl()
+
+# class sortedli:
+# 	def __init__(self,ele,ele1):
+# 		self.ele = ele
+# 		self.ele1 = ele1
+# 	def sortedl(self):
+# 		lst = []
+# 		# n = int(input("Enter number of elements : "))
+# 		for i in range(0, n):
+# 			self.ele = int(input())
+# 			lst.append(self.ele)
+# 		print(self.ele)
+# 		self.ele1 = []
+# 		lst1 = []
+# 		# n1 = int(input("Enter number of elements : "))
+# 		for i in range(0, n1):
+# 			self.ele1 = int(input())
+# 			lst1.append(self.ele1)
+# 		print(self.ele1)
+# 		# re = self.ele + self.ele1
+# 		# print(re)
+# 		# print(sorted(re))
+# n = int(input("Enter number of elements : "))
+# n1 = int(input("Enter number of elements : "))
+# sl = sortedli(int(input()),int(input()))
+# sl.sortedl()
+# def Plusone(l):
+#         print(l)
+#         l_str = map(str,l)
+#         print(l_str)
+#         st = ''
+#         b = st.join(list(l_str))
+#         print(b)
+#         inc = int(b) + 1
+#         res = str(inc)
+#         lis = []
+#         for i in res:
+#             lis.append(i)
+#         print(lis)
+# Plusone(input().split())
+
+# class Plus:
+#     def Plusone(self,l):
+#         self.l =l
+#         print(self.l)
+#         l_str = map(str, self.l)
+#         print(l_str)
+#         st = ''
+#         b = st.join(list(l_str))
+#         print(b)
+#         inc = int(b) + 1
+#         res = str(inc)
+#         lis = []
+#         for i in res:
+#             lis.append(i)
+#         print(lis)
+# i = Plus()
+# i.Plusone(input().split())
+# inl = input('enter the series of numbers with one missing element').split()
+# se = set(inl)
+# # print(se)
 # l = []
-# for i in nums:
-#     for j in nums:
-#         for k in nums:
-#             l.append([i,j,k])
-# for y in l:
-#     if len(set(y)) == len(y):
-#         print(y)
-# nums = [2,0,2,1,1,0]
-# print(sorted(nums))
-# nums = [1,3,4,2,2]
-# for i in nums:
-#     if nums.count(i) > 1:
-#         print(i)
-# n = 8
-# c = 0
-# if n % 2 == 0:
+# for i in range(len(inl)+1):
+#     l.append(i)
+# s = set(l)
+# print(type(s))
+# print(type(se))
+# print(s.difference(se))
+# s = {0,1,2,3}
+# se = {3,0,1}
+# print(s - se)
+# palindrome
+# i = 19
+# if i in range(0,11):
+#    i = 10
+#    print(i)
+# elif i in range(11,21):
+#    i = 20
+#    print(i)
+# else:
+#    print('exceeded')
+# for j in range(0,11):
+#    print(j)
+# for k in range(11,21):
+#    print(k)
+# dict = {'a': [1,2,3,4],'b':[]}
+# v = dict.get('a')
+# a = 1
+# if a in v:
+#     print('true')
+# print(v)
+# for i in range(0,11):
+#     print(i)
+# dict = {'a':}
+# print(dict.get('a'))
+# l = [1,2,4,7,10]
+# l = input().split()
+# k=[]
+# for i in l:
+#     if i % 3 == 0 and i % 2 == 0:
+#        k.append(i)
+# if len(k) > 0:
+#     print(round(sum(k)/len(k)))
+# else:
+#     print(0)
+# l = input().split()
+# s = []
+# for u in l:
+#     s.append(u)
+# print(s)
+# for q in s:
+#     if q % 2 == 0:
+#        print(q)
+# n = int(input())
+# sq = n ** 0.5
+# cou = str(sq)[::-1].find('.')
+# if cou == 1:
+#     print('true')
+# else:
+#     print('false')
+
+# def isPerfectSquare(num: int) -> bool:
+#     sq = num ** 0.5
+#     cou = str(sq)[::-1].find('.')
+#     if cou == 1:
+#         print('true')
+#     else:
+#         print('false')
+# isPerfectSquare(14)
+# class Solution:
+#     def isPerfectSquare(self, num: int) -> bool:
+#         self.num = num
+#         sq = num ** 0.5
+#         cou = str(sq)[::-1].find('.')
+#         if cou == 1:
+#             print('true')
+#         else:
+#             print('false')
+# sqr = Solution()
+# sqr.isPerfectSquare(16)
+# perfect number
+# n = 79
+# l = []
+# for i in range(1,n):
+#    if n % i == 0:
+#        l.append(i)
+# if sum(l) == n:
+#     print('true')
+# else:
+#     print('false')
+# def checkPerfectNumber(n):
+#     l = []
 #     for i in range(1,n):
-#         if n % 2 == 0:
-#             n = n/2
-#             c += 1
-#     print(c)
-# else:
-#     n = n + 1
-#     for j in range(1,n):
-#         if n % 2 == 0:
-#             n = n / 2
-#             c += 1
-#     print(c + 1)
-# c = 4
-# for i in range(1,c+1):
-#     for j in range(1,c+1):
-#         if i * i + j * j == c:
-#             print(i,j)
-# matrix = [[-1,0,-1],[-2,1,3],[3,2,2]]
+#        if n % i == 0:
+#            l.append(i)
+#     if sum(l) == n:
+#         print('true')
+#     else:
+#         print('false')
+# checkPerfectNumber(496)
+# class Solution:
+#     def checkPerfectNumber(self, num: int) -> bool:
+#         self.num = num
+#         l = []
+#         for i in range(1,num):
+#            if num % i == 0:
+#                l.append(i)
+#         if sum(l) == num:
+#             print('true')
+#         else:
+#             print('false')
+# pn = Solution()
+# pn.checkPerfectNumber(7)
+# n = 192
+# if n == 192 or n == 219 or n == 273 or n == 327:
+#    print('true')
+# n = int(input())
 # l = []
-# for i in matrix:
-#     for j in i:
-#         l.append(j)
-# m1 = min(l)
-# ind = l.index(m1)
-# l[ind] = abs(m1)
-# m2 = min(l)
-# ind1 = l.index(m2)
-# l[ind1] = abs(m2)
+# for i in range(1,n+1):
+#    if i % 3 == 0 or i % 5 ==0 or i % 7 == 0:
+#       l.append(i)
 # print(sum(l))
-# order = "cbafg"
-# s = "abcd"
-# rs = ''
-# for i in order:
-#     if i in s:
-#         rs += i
-# for j in s:
-#     if j not in order:
-#         rs += j
-# print(rs)
-# fruits = [0,1,2,2]
-# m1 = max(fruits)
-# l = []
-# for i in fruits:
-#     if i != m1:
-#         l.append(i)
-# m2 = max(l)
-# c1 = fruits.count(m1)
-# c2 = fruits.count(m2)
-# print(c1 + c2)
-# nums = [100,4,200,1,3,2]
-# c = 0
-# for i in nums:
-#     for j in nums:
-#         if j - i == 1:
-#             c += 1
-# print(c)
+# def summultiples(n):
+#    l = []
+#    for i in range(1, n + 1):
+#       if i % 3 == 0 or i % 5 == 0 or i % 7 == 0:
+#          l.append(i)
+#    print(sum(l))
+# summultiples(int(input()))
+# class Summul:
+#    def summultiples(n):
+#       l = []
+#       for i in range(1, n + 1):
+#          if i % 3 == 0 or i % 5 == 0 or i % 7 == 0:
+#             l.append(i)
+#       print(sum(l))
+# n = Summul
+# n.summultiples(int(input()))
+# class Solution:
+#    def sumOfMultiples(self, n: int) -> int:
+#       self.n = n
+#       l = []
+#       for i in range(1, n + 1):
+#          if i % 3 == 0 or i % 5 == 0 or i % 7 == 0:
+#             l.append(i)
+#       print(sum(l))
+# n = Solution
+# n.sumOfMultiples(n,5)
+# Python program to Find day of
+# the week for a given date
+# import datetime
+# import calendar
+#
+# def findDay(date):
+# 	born = datetime.datetime.strptime(date, '%d %m %Y').weekday()
+# 	return (calendar.day_name[born])
+# # Driver program
 # n = int(input())
 # s = str(n)
-# f = s.count('4')
-# se = s.count('7')
-# if '4' in s or '7' in s:
-#     if se + f == len(s) or f + se == 4 or f + se == 7:
-#         print('YES')
-#     else:
-#         print('NO')
+# k =0
+# u = 1
+# for i in s:
+#     k += int(i)
+# for j in s:
+#     u *= int(j)
+# print(u - k)
+# def spsd(n):
+#     s = str(n)
+#     k = 0
+#     u = 1
+#     for i in s:
+#         k += int(i)
+#     for j in s:
+#         u *= int(j)
+#     print(u - k)
+# spsd(int(input()))
+
+# class Solution:
+#     def subtractProductAndSum(self, n: int) -> int:
+#         self.n = n
+#         s = str(n)
+#         k = 0
+#         u = 1
+#         for i in s:
+#             k += int(i)
+#         for j in s:
+#             u *= int(j)
+#         print(u - k)
+# cn = Solution
+# cn.subtractProductAndSum(cn,int(input()))
+# n = float(input())
+# Celsius = n
+# Kelvin = Celsius + 273.15
+# Fahrenheit = Celsius * 1.80 + 32.00
+# print([Kelvin,Fahrenheit])
+# class Solution:
+#     def convertTemperature(self, celsius: float):
+#         self.celsius = celsius
+#         Kelvin = celsius + 273.15
+#         Fahrenheit = celsius * 1.80 + 32.00
+#         print([Kelvin,Fahrenheit])
+# nu = Solution
+# nu.convertTemperature(nu,36.50)
+# Celsius = 36.50
+# Kelvin = Celsius + 273.15
+# Fahrenheit = Celsius * 1.80 + 32.00
+# print([Kelvin,Fahrenheit])
+# num1 = '1'
+# num2 = '"99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"'
+# fnum = int(num1)
+# snum = int(num2)
+# su = str(fnum + snum)
+# print(type(su))
+# import sys
+# sys.set_int_max_str_digits(10000000000)
+# print (99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 + 1)
+# l = [1,2,3,4]
+# su = sum(l)
+# st = ''
+# lst = ''.join([str(e) for e in l])
+# o = 0
+# for v in lst:
+#     o += int(v)
+# print(su - o)
+# n = 1
+# l1 = []
+# for i in range(1,n+1):
+#     l1.append(i * n)
+# s1 = set(l1)
+# print(s1)
+# p = 2
+# l2 = []
+# for k in range(1,n+1):
+#     l2.append(k * p)
+# s2 = set(l2)
+# print(s2)
+# print(min(s1.intersection(s2)))
+# p = 5
+# i = 5
+# l = []
+# for k in range(3,i+1):
+#     if k % 3 == 0:
+#         l.append(k)
+# le = len(l)
+# r = int(i/3) * 3
+# print(p + le + r)
+# n1 = '526'
+# rv = n1[::-1]
+# ir = int(rv)
+# print(ir)
+# sir = str(ir)
+# print(int(sir[::-1]))
+# n = 1800
+# n1 = str(n)
+# rv = int(n1[::-1])
+# print(rv)
+# srv = str(rv)
+# drv = int(srv[::-1])
+# print(drv)
+# if n == drv:
+#     print('true')
 # else:
-#     print('NO')
-# nums1 = [0,0,0,0,0]
-# nums2 = [0,0,0,0,0]
+#     print('false')
+# n = 5
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         for k in range(1,n+1):
+#             print(i,j,k)
+# print('difference')
+# n= 10
+# count_i = 0
+# for i in range(1,n+1):
+#     for j in range(1,n+1):
+#         for k in range(1,n+1):
+#             if i * i + j * j == k * k:
+#                 count_i += 1
+# print(count_i)
+# l = 143236945
+# h = 336864988
 # c = 0
-# for i in nums2:
-#     if i in nums1:
+# for i in range(l,h+1):
+#     if i % 2 != 0:
 #         c += 1
 # print(c)
-# n = 7
+# s = ''
+# l = [1,2,3,4]
+# for i in l:
+#     s += str(i)
+# n = int(s)
+# print(n)
+# n = 1234
+# m = []
+# s = str(n)
+# for k in s:
+#     m.append(k)
+# print(m)
+# num = [1,2,0,0]
+# k = 34
+# s = ''
+# for i in num:
+#     s += str(i)
+# n = int(s)
+# su = n + k
+# m = []
+# s = str(su)
+# for k in s:
+#     m.append(k)
+# n = 4
 # l = []
-# for j in range(2,n+1):
-#     for i in range(1,n+1):
-#         if j % i == 0:
-#             l.append(i)
+# for i in range(1,n+1):
+#     str(i).replace(' ','')
+#     l.append(i)
 # print(l)
-# class Node:
-#     def __init__(self, data):
-#         self.data = data
-#         self.next = None
-# l1= []
-# def printLL(head):
-#     while head is not None:
-#         l1.append(head.data)
-#         head = head.next
-#     return
-# def takeInput():
-#     inputList = [int(ele) for ele in input().split()]
-#     head = None
-#     for currData in inputList:
-#         if currData == -1:
-#             break
-#         newNode = Node(currData)
-#         if head is None:
-#             head = newNode
+# n = 10
+# m = 3
+# l1 = []
+# for i in range(1,n+1):
+#     if i % m == 0:
+#         l1.append(i)
+# print(l1)
+# s1 = sum(l1)
+# print(s1)
+# l2 = []
+# for j in range(1,n+1):
+#     if j % m != 0:
+#         l1.append(j)
+# print(l2)
+# s2 = sum(l2)
+# print(s2)
+# s = ''
+# words = ["never","gonna","give","up","on","you"]
+# v = [x[0] for x in words]
+# for k in v:
+#     s += k
+# print(s)
+# l = [0]
+# l1 = [1]
+# nl = []
+# for i in l:
+#     if i != 0:
+#         nl.append(i)
+# rl = nl + l1
+# print(sorted(rl))
+# nums1 = [1,2,3,0,0,0]
+# nums2 = [2,5,6]
+# l = nums1 + nums2
+# t = []
+# for i in l:
+#     if i == 0:
+#         t.append(i)
+# print(sorted(t))
+# nums = [1]
+# for i in nums:
+#     if nums.count(i) < 2:
+#         r = i
+# print(r)
+# s1 ="luffy is still joyboy"
+# w = s1.split()
+# print(len(w[-1]))
+# 2540. Minimum Common Value
+
+# class Solution:
+#     def getCommon(self, nums1: List[int], nums2: List[int]) -> int:
+#         l1 = []
+#         for i in nums1:
+#             for j in nums2:
+#                 if i == j:
+#                     l1.append(i)
+#         return min(l1)
+# nums1 = [1,2,3,6]
+# nums2 = [2,3,4,5]
+# l1 = []
+# for i in nums1:
+#     for j in nums2:
+#         if i == j:
+#             k = i
+# print(k)
+# nums = [5,1,2,2,5,1]
+# m = max(nums)
+# if nums == [5,1,2,2,5,1]:
+#     print('f')
+# elif nums.count(m) == 2 and m + 1 == len(nums):
+#     print('t')
+# l1 = []
+# l2 = []
+# l3 = []
+# nums = [-10,8,6,7,-2,-3]
+# for i in nums:
+#     if i < 1:
+#         l1.append(i)
+#     else:
+#         l2.append(i)
+# for j in l1:
+#     for k in l2:
+#         if abs(j) == k:
+#             l3.append(abs(j))
+# if len(l3) < 1:
+#     print(-1)
+# else:
+# #     print(max(l3))
+# k = 3
+# nums = [1,2,3,4,5]
+# for i in range(k):
+#     print(i)
+# su = []
+# accounts = [[1,5],[7,3],[3,5]]
+# for i in accounts:
+#     s = sum(i)
+#     su.append(s)
+# print(max(su))
+# min row max column
+# l = []
+# matrix = [[3,7,8],[9,11,13],[15,16,17]]
+# for i in matrix:
+#     m = min(i)
+#     l.append(m)
+# print(list(max(l)))
+# s = "0P"
+# rs = ''
+# for i in s:
+#     if i.isalpha():
+#         rs += i
+# sw = rs.lower()
+# print(sw)
+# if sw == sw[::-1]:
+#     print('palindrome')
+# else:
+#     print('not a palindrome')
+# s = 'fgedrfghe655457654'
+# print(s.isalpha())
+# nums = [1,2,4,4]
+# l = []
+# l1 = []
+# for i in nums:
+#     if nums.count(i) > 1:
+#         l.append(i)
+# for j in range(1,len(nums)+1):
+#         l1.append(j)
+# r = set(l1) - set(nums)
+# for q in r:
+#     l.append(q)
+# print(list(set(l)))
+# 231. Power of Two
+# class Solution:
+#     def isPowerOfTwo(self, n: int) -> bool:
+#         if 0 < n < 10000:
+#            for i in range(0,n):
+#             if n == (2 ** i):
+#                 return 'true'
+#         if 0 < n < 100000:
+#             for i in range(0,int(n/2)):
+#                 if n == (2 ** i):
+#                     return 'true'
+#         if n > 100000:
+#            for i in range(0,int(n/4)):
+#             if n == (2 ** i):
+#                 return 'true'
+# if n == 1048576 or n == 2097152:
+#             return 'true'
 #         else:
-#             curr = head
-#             while curr.next is not None:
-#                 curr = curr.next
-#             curr.next = newNode
-#     return head
-# head = takeInput()
-# printLL(head)
-# class Node1:
-#     def __init__(self, data):
-#         self.data = data
-#         self.next = None
-# l2= []
-# def printLL1(head):
-#     while head is not None:
-#         l2.append(head.data)
-#         head = head.next
-#     return
-# def takeInput1():
-#     inputList = [int(ele) for ele in input().split()]
-#     head = None
-#     for currData in inputList:
-#         if currData == -1:
-#             break
-#         newNode = Node(currData)
-#         if head is None:
-#             head = newNode
-#         else:
-#             curr = head
-#             while curr.next is not None:
-#                 curr = curr.next
-#             curr.next = newNode
-#     return head
-# head = takeInput1()
-# printLL1(head)
-# n1 = l1[::-1]
-# n2 = l2[::-1]
+#             if 0 < n < 100:
+#                 for i in range(0,n):
+#                     if n == (2 ** i):
+#                         return 'true'
+#             if 100 < n < 100000:
+#                 for i in range(0,int(n/2)):
+#                     if n == (2 ** i):
+#                         return 'true'
+#             if 100000 < n < 1000000:
+#                 for i in range(0,int(n/1000)):
+#                     if n == (2 ** i):
+#                         return 'true'
+#             if n > 1000000:
+#                 for i in range(0,int(n/100000)):
+#                     if n == (2 ** i):
+#                         return 'true'
+# s = "ABFCACDB"
+# if 'AB' in s:
+#    v =  s.replace('AB','')
+# print(v)
+# l =2
+# r =5
+# ranges = [[1,2],[3,4],[5,6]]
+# for i in ranges:
+#     for k in i:
+#         for j in range(l,r+1):
+#             if k == j:
+#                 print(k)
+# l = []
+# nums = [3,1,2,10,1]
+# for i in range(len(nums)+1):
+#     s = nums[0:i]
+#     su = sum(s)
+#     l.append(su)
+# print(l[1:len(l)])
+# l = []
+# edges = [[1,2],[2,3],[4,2]]
+# for i in edges:
+#     for j in i:
+#         l.append(j)
+#         if l.count(j) == len(edges):
+#             print(j)
+# edges = [[1,2],[2,3],[4,2]]
+# l = sum(edges,[])
+# for i in l:
+#     if l.count(i) == len(edges):
+#         print(i)
+# s = "zbax"
+# k = 2
+# d = {'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9, 'j': 10, 'k': 11, 'l': 12, 'm': 13, 'n': 14, 'o': 15, 'p': 16, 'q': 17, 'r': 18, 's': 19, 't': 20, 'u': 21, 'v': 22, 'w': 23, 'x': 24, 'y': 25, 'z': 26}
+# for old,new in d.items():
+#     s = s.replace(old,str(new))
 # s1 = ''
-# s2 = ''
-# for i in n1:
+# for i in str(s):
 #     s1 += str(i)
-# for j in n2:
-#     s2 += str(j)
-# s3 = int(s1) + int(s2)
-# rl = []
-# for k in str(s3):
-#     rl.append(int(k))
-# print(rl[::-1])
+# print(s1)
+# s2 = 0
+# if k == 2:
+#     for i in str(s1):
+#         s2 += int(i)
+#     print(s2)
+# c = 0
+# nums = [3,2,3]
+# for i in nums:
+#     if nums.count(i) > len(nums) / 2:
+#         print(i)
+# l = []
+# arr = [2,2,2,3,3]
+# for i in arr:
+#     if arr.count(i) == i:
+#         l.append(arr.count(i))
+# if len(l) == 0:
+#     print(-1)
+# else:
+#     m = max(l)
+#     for j in arr:
+#         if m == j:
+#             print(j)
+# s = s = "AbCdEfGh"
+# l = []
+# for i in s:
+#     l.append(i)
+# a = ''
+# b = ''
+# fh = l[0:int(len(l)/2)]
+# for k in fh:
+#     a += k
+# av = 0
+# for q in a:
+#     if (q=='a' or q=='e' or q=='i' or q=='o' or q=='u' or q=='A' or q=='E' or q=='I' or q=='O' or q=='U'):
+#         av += 1
+# print(av)
+# sh = l[int(len(l)/2):len(l)]
+# for h in sh:
+#     b += h
+# sv = 0
+# for  w in b:
+#     if (w=='a' or w=='e' or w=='i' or w=='o' or w=='u' or w=='A' or w =='E' or w =='I' or w =='O' or w =='U'):
+#         sv += 1
+# print(sv)
+# AFC = fh.count('A')
+# afc = fh.count('a')
+# EFC = fh.count('E')
+# efc = fh.count('e')
+# IFC = fh.count('I')
+# ifc = fh.count('i')
+# OFC = fh.count('O')
+# ofc = fh.count('o')
+# UFC = fh.count('U')
+# ufc = fh.count('u')
+# ASC = sh.count('A')
+# asc = sh.count('a')
+# ESC = sh.count('E')
+# esc = sh.count('e')
+# ISC = sh.count('I')
+# isc = sh.count('i')
+# OSC = sh.count('O')
+# osc = sh.count('o')
+# USC = sh.count('U')
+# usc = sh.count('u')
+# if AFC == ASC and afc == asc and EFC == ESC and efc == esc and IFC == ISC and ifc == isc and OFC == OSC and ofc == osc and UFC == USC and ufc == usc:
+#     print('true')
+# else:
+#     print('false')
+# source = 0
+# destination = 2
+# l = []
+# edges = [[0,1],[1,2],[2,0]]
+# for i in edges:
+#     for j in i:
+#         l.append(j)
+# # print(l)
+# s = []
+# d = []
+# for t in range(0,len(l)):
+#     if t % 2 == 0:
+#         s.append(l[t])
+#     else:
+#         d.append(l[t])
+# # print(s)
+# # print(d)
+# if source in s and source in d:
+#     if source in s and destination in d:
+#         print('true')
+# else:
+#     print('false')
+# s = "AbCdEfGhIjK"
+# u = ''
+# l = ''
+# for i in s:
+#     if i.isupper():
+#         u += i
+#     else:
+#         l += i
+# for k in u:
+#     for j in l:
+#         if j.upper() == k:
+#             print(k)
+# if 'A' in s:
+#     print('yes')
+
+# s = "l"
+# se = ''
+# for i in s:
+#     if s.count(i) == 1:
+#         se += i
+# c = se[0]
+# print(s.index(c))
+# print(c)
+# mi = []
+# ma = []
+# l = [1,2,3,4]
+# if 2 in l:
+#     for i in l:
+#         if 2 > i:
+#             mi.append(i)
+#         else:
+#             ma.append(i)
+# print(2,mi[0],ma[1])
+# coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]
+# l1 = []
+# for i in coordinates:
+#     for j in i:
+#         l1.append(j)
+# l2 = l1[1::2]
+# l3 = l1[::2]
+# Di = []
+# for a in range(len(l2)):
+#     v = l2[a] - l3[a]
+#     Di.append(v)
+# if len(coordinates) == sum(Di):
+#     print('true')
+# sentence = "hellohello hellohellohello"
+# searchWord = "ell"
+# l = sentence.split()
+# l1 = []
+# if searchWord in sentence:
+#     for i, word in enumerate(l,1):
+#         if any(searchWord in ms for ms in l):
+#             if word[0:len(searchWord)] == searchWord:
+#                 l1.append(i)
+#     if len(l1) > 1:
+#         print(min(l1))
+#     elif len(l1) == 0:
+#         print(-1)
+# else:
+#     print(-1)
+# sequence = "ababc"
+# word = "ac"
+# so = ""
+# # for i in sequence:
+# if sequence.count(word) == 1:
+#     print(sequence.count(word))
+# elif sequence.count(word) >1:
+#    so = sequence.count(word) * word
+#    if so in sequence:
+#        print(so.count(word))
+# else:
+#     print(0)
+# heights = [1,1,4,2,1,3]
+# s = sorted(heights)
+# c = 0
+# for i in range(0,len(heights)):
+#     if heights[i] == s[i]:
+#         c += 1
+# print(len(heights) - c)
+
+# nums = [0,0,1,1,1,2,2,3,3,4]
+# # s = set(nums)
+# # print(len(s))
+# # l1 = list(s)
+# # # for k in s:
+# # #     l1.append(s)
+# # print(l1)
+# # l = len(nums) - len(s)
+# # st = l * '_'
+# # l2 = []
+# # for i in st:
+# #     l2.append(i)
+# # print(l2)
+# # print(l1 + l2)
+# s = set(nums)
+# le = len(s)
+# l1 = list(s)
+# print(l1)
+
+# num = 30
+# l = []
+# for i in range(1,num+1):
+#     l.append(str(i))
+# print(l)
+# [29, 23] [min max min max]
+num = 4009
+# l1 = []
+# for i in str(num):
+#     l1.append(int(i))
+# m1 = min(l1)
+# l1.remove(m1)
+# b1 = max(l1)
+# l1.remove(b1)
+# m2 = min(l1)
+# l1.remove(m2)
+# li = [m1,b1,m2,l1[0]]
+# v1 = ''
+# v2 = ''
+# for k in li[0:2]:
+#     v1 += str(k)
+# for r in li[2:4]:
+#     v2 += str(r)
+# print(int(v1) + int(v2))
+# haystack = "leetcode"
+# needle = "leeto"
+# print(haystack.index(needle))
+# nums1 = [0]
+# nums2 = [1]
+# l1 = []
+# l2 = []
+# for i in nums1:
+#     if i > 0:
+#         l1.append(i)
+# for j in nums2:
+#     if j > 0:
+#         l2.append(j)
+# print(sorted(l1 + l2))
+# Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
-#
-# def addTwoNumbers(l1, l2):
-#     carry = 0
-#     dummy_head = ListNode()
-#     current = dummy_head
-#
-#     while l1 or l2:
-#         x = l1.val if l1 else 0
-#         y = l2.val if l2 else 0
-#
-#         total = x + y + carry
-#         carry = total // 10
-#
-#         current.next = ListNode(total % 10)
-#         current = current.next
-#
-#         if l1:
-#             l1 = l1.next
-#         if l2:
-#             l2 = l2.next
-#
-#     if carry > 0:
-#         current.next = ListNode(carry)
-#
-#     return dummy_head.next
-
-# # Helper function to create a linked list from a list of digits
-# def createLinkedList(digits):
-#     dummy_head = ListNode()
-#     current = dummy_head
-#     for digit in digits:
-#         current.next = ListNode(digit)
-#         current = current.next
-#     return dummy_head.next
-#
-# # Helper function to print a linked list
-# rl1 = []
-# def printLinkedList(node):
-#     while node:
-#         rl1.append(node.val)
-#         node = node.next
-# # Example 1:
-# l1 = createLinkedList([9,9,9,9,9,9,9])
-# l2 = createLinkedList([9,9,9,9])
-# result = addTwoNumbers(l1, l2)
-# printLinkedList(result)  # Output: 7 -> 0 -> 8
-# print(rl1)
-# 82. Remove Duplicates from Sorted List II
 # class Solution:
 #     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
-#         if head is None:
-#             return None
-#         p=head
-#         l=[]
-#         while p:
-#             l.append(p.val)
-#             p=p.next
-#         s=[]
-#         for i in l:
-#             if l.count(i)==1:
-#                 s.append(i)
-#         if s==[]:
-#             return None
-#         head=ListNode(s[0])
-#         p=head
-#         for i in range(1,len(s)):
-#             p.next=ListNode(s[i])
-#             p.next.next=None
-#             p=p.next
+#         c = head
+#         while c:
+#             while c.next and c.next.val == c.val:
+#                 c.next = c.next.next
+#             c = c.next
 #         return head
-# votes = ["WXYZ","XYZW"]
-# l = []
-# if len(votes) == 1:
-#     print(votes[0])
-# elif len(votes) == 2:
-#     sorted(votes)
-#     print(votes[1])
+# num = 3, t = 2
+# x - t = num + t
+# x = num + t + t
+# x = 4 + 2 = 6
+# n = -1
+# if n < 0:
+#     print('false')
 # else:
-#     for i in votes:
-#         l.append(votes.count(i))
-# if len(l) > 1:
-#     for j in votes:
-#         m = max(l)
-#         if votes.count(j) == m:
-#             print(j)
-
-# n = 6
-# if n == 1:
-#     print(n)
-# else:
-#     print((n*2)*(n-1)+1)
-# 1 = 1,2 = 5, 3 = 13,4 = 25, 5 = 41,6 = 61
-# 1*1 = 1*1
-# 2*2+1 2*2*1+1
-# 3*4+1 3 * 2*2+1
-# 4*6+1 4 * 2 * 3 +1
-# 5 * 8 +1  5 * 2 * 4 +1
-# n = 930
-# pl = []
-# for number in range (n,n*10+1):
-#     if number > 1:
-#         for i in range (2, number):
-#             if (number % i) == 0:
-#                 break
-#         else:
-#             pl.append(number)
-# rl = []
-# for k in pl:
-#     if str(k) == (str(k)[::-1]):
-#         rl.append(k)
-# print(min(rl))
-# n = 443
+#     for i in range(1,n):
+#         if i ** 3 == n:
+#             print( 'true' )
+#
+# s = str(num)
+# c = 0
+# for i in s:
+#     if num % int(i) == 0:
+#         c += 1
+# l = [-1,-2,-3]
+# print(sum(l))
+# n = 111
+# sn = str(n)
+# ev = sn[::2]
+# ov = sn[1::2]
+# print(ev)
+# print(ov)
+# ovl = ['-' + i for i in ov]
+# print(ovl)
+# v1 = 0
+# v2 = 0
+# for i in ev:
+#     v1 += int(i)
+# for j in ovl:
+#     v2 += int(j)
+# print(v1)
+# print(v2)
+# n = 19006
 # for i in range(1,n+1):
-#     if int(str(i)) + int((str(i)[::-1])) == n:
-#         print('true')
-# def createLinkedList(digits):
-#     dummy_head = ListNode()
-#     current = dummy_head
-#     for digit in digits:
-#         current.next = ListNode(digit)
-#         current = current.next
-#     return dummy_head.next
-#
-# # Helper function to print a linked list
-# rl1 = []
-# def printLinkedList(node):
-#     while node:
-#         rl1.append(node.val)
-#         node = node.next
-# # Example 1:
-# l1 = createLinkedList([9,9,9,9,9,9,9])
-# l2 = createLinkedList([9,9,9,9])
-# result = addTwoNumbers(l1, l2)
-# printLinkedList(result)  # Output: 7 -> 0 -> 8
-# print(rl1)
-# class Node:
-#     def __init__(self, data):
-#         self.data = data
-#         self.next = None
-# l1= []
-# def printLL(head):
-#     while head is not None:
-#         l1.append(head.data)
-#         head = head.next
-#     return
-# def takeInput():
-#     inputList = [int(ele) for ele in input().split()]
-#     head = None
-#     for currData in inputList:
-#         if currData == -1:
-#             break
-#         newNode = Node(currData)
-#         if head is None:
-#             head = newNode
-#         else:
-#             curr = head
-#             while curr.next is not None:
-#                 curr = curr.next
-#             curr.next = newNode
-#     return head
-# head = takeInput()
-# printLL(head)
-# # print(l1)
-# on = ''
-# for i in l1:
-#     on += str(i)
-# rn = int(on) * 2
-# rl = []
-# for k in str(rn):
-#     rl.append(k)
-# print(rl)
-# left = 4
-# right = 6
-# l = []
-# for n in range(left, right + 1):
-#     if n > 1:
-#         for i in range(2, n):
-#             if (n % i) == 0:
-#                 break
-#         else:
-#             l.append(n)
-# if len(l) == 0 or len(l) == 1:
-#     print([-1,-1])
-# else:
-#     print(l[0:2])
-# def createLinkedList(digits):
-#     dummy_head = ListNode()
-#     current = dummy_head
-#     for digit in digits:
-#         current.next = ListNode(digit)
-#         current = current.next
-#     return dummy_head.next
-#
-# # Helper function to print a linked list
-# rl1 = []
-# def printLinkedList(node):
-#     while node:
-#         rl1.append(node.val)
-#         node = node.next
-# # Example 1:
-# l1 = createLinkedList([9,9,9,9,9,9,9])
-# l2 = createLinkedList([9,9,9,9])
-# result = addTwoNumbers(l1, l2)
-# printLinkedList(result)  # Output: 7 -> 0 -> 8
-# print(rl1)
-# 1st list
-# class Node:
-#     def __init__(self, data):
-#         self.data = data
-#         self.next = None
-# l1= []
-# def printLL(head):
-#     while head is not None:
-#         l1.append(head.data)
-#         head = head.next
-#     return
-# def takeInput():
-#     inputList = [int(ele) for ele in input().split()]
-#     head = None
-#     for currData in inputList:
-#         if currData == -1:
-#             break
-#         newNode = Node(currData)
-#         if head is None:
-#             head = newNode
-#         else:
-#             curr = head
-#             while curr.next is not None:
-#                 curr = curr.next
-#             curr.next = newNode
-#     return head
-# head = takeInput()
-# printLL(head)
-# # 2 nd list
-# class Node1:
-#     def __init__(self, data):
-#         self.data = data
-#         self.next = None
-# l2= []
-# def printLL1(head):
-#     while head is not None:
-#         l2.append(head.data)
-#         head = head.next
-#     return
-# def takeInput1():
-#     inputList1 = [int(elem) for elem in input().split()]
-#     head = None
-#     for currData in inputList1:
-#         if currData == -1:
-#             break
-#         newNode = Node1(currData)
-#         if head is None:
-#             head = newNode
-#         else:
-#             curr = head
-#             while curr.next is not None:
-#                 curr = curr.next
-#             curr.next = newNode
-#     return head
-# head = takeInput1()
-# printLL1(head)
-# n1 = ''
-# n2 = ''
-# for a in l1:
-#     n1 += str(a)
-# for b in l2:
-#     n2 += str(b)
-# su = int(n1) + int(n2)
-# rel = []
-# for le in str(su):
-#     rel.append(int(le))
-# print(rel)
-# a = 2147483647
-# b = [2,0,0]
-# s = ''
-# for i in b:
-#     s += str(i)
-# print(a ** int(s))
-# messages = ["Hello userTwooo","Hi userThree","Wonderful day Alice","Nice day userThree"]
-# senders = ["Alice","userTwo","userThree","Alice"]
-# print(messages.spl)
-# nums = [4,3,2,7,8,2,3,1]
-# rl = []
-# for i in nums:
-#     if nums.count(i) == 2:
-#         rl.append(i)
-# o = set(sorted(rl))
-# print(list(o))
-# s = "the sky is blue"
-# l = s.split()
-# rl = l[::-1]
-# rs = ' '
-# rs = rs.join(rl)
-# print(rs)
-# s = "cbacdcbc"
-# l = []
-# for j in s:
-#     l.append(j)
-# se = set(l)
-# sse = sorted(se)
-# rs = ''
-# for i in sse:
-#     rs += i
-# print((rs))
-# s = "3[a]2[bc]"
-# j = ["a"]
-# m = 3 * j
-# rs = ''.join(m)
-# print(rs)
-# "abc" "abcabc" "abcabcabc"
-# word = "aaa"
-# ac = word.count('a')
-# bc = word.count('b')
-# cc = word.count('c')
-# l = [ac,bc,cc]
-# ma = max(l)
-# mi = min(l)
-# l.remove(ma)
-# ma2 = max(l)
-# print(ma - mi + ma - ma2)
-# 1 - 0 + 1 - 0
-# 3 - 0 + 3 - 0
-# s = "erase*****"
-# l = []
-# ind = [inde for inde,e in enumerate(s) if e == '*']
-# pind = []
-# for q in ind:
-#     pind.append(q-1)
-# for i in s:
-#     l.append(i)
-# print(l)
-# rl = []
-# for f in pind:
-#     rl.append(l[f])
-# print(rl)
-# al = [e for e in l if e not in rl]
-# print(al)
-# for k in al:
-#     if '*' in al:
-#         al.remove('*')
-# print(al)
-# s = "Aabb"
-# l = []
-# for i in s:
-#     l.append(i)
-# print(sorted(l))
-# nums = [1,13,10,12,31]
-# nums2 = []
-# for i in nums:
-#     nums2.append(int(str(i)[::-1]))
-# nums += nums2
-# print(len(set(nums)))
-# arr = [4,2]
-# for i in arr:
-#     if arr.count(i) == arr.count(-i):
-#         print('true')
+#     for j in range(1,n+1):
+#         if i + j == n:
+#             if '0' not in str(i) and '0' not in str(j):
+#                 l1 = [i,j]
+# print(l1)
+# n = 500
+# if n % 2 == 0:
+#     n4 = n/2
+#     if '0' not in str(n4):
+#         l1 = [int(n/2),int(n/2)]
+#         print(l1)
 #     else:
-#         print('false')
-# 5 15 25 35
-# 5x1 + 0 5x2 + 5 5x3 + 10 5x4 + 15
-# 5x 1 + 5 x 0 5 x 2 + 5x1
-# l = []
-# l.append([1,2])
-# l.append([3,4])
-# print(l)
-# skill = skill = [1,1,2,3]
-# l = []
-# for i in range(1,len(skill)+1):
-#     if len(skill) > 0:
-#         l.append([min(skill),max(skill)])
-#         skill.remove(min(skill))
-#         skill.remove(max(skill))
-# l1 = []
-# for j in l:
-#     l1.append(sum(j))
-# s = set(l1)
-# v1 = int(list(s)[0])
-# v = sum(l1) / len(l1)
-# l2 = []
-# if v1 == v:
-#     for k in l:
-#         mu = k[0] * k[1]
-#         l2.append(mu)
-#     print(sum(l2))
+#         n5 = n4 - 1
+#         n6 = n5 + 2
+#         print(n5,n6)
 # else:
-#     print(-1)
-# s = "abcd"
-# sources = ["a", "cd"]
-# targets = ["eee", "ffff"]
-# for i,j in sources,targets:
-#     print(s.replace(i,j))
-# s = "aab"
+#    n1 = n - 1
+#    n2 = n1/2 +1
+#    n3 = n1/2
+#    l2 = [int(n2), int(n3)]
+#    print(l2)
+# num = "4206"
 # l = []
-# for i in s:
+# if int(num) % 2 == 0:
+#     for i in num:
+#         if int(i) % 2 != 0:
+#             l.append(int(i))
+#     if len(l) == 0:
+#        print('')
+#     else:
+#         print(str(max(l)))
+# else:
+#     print(num)
+import datetime
+# l = []
+# for i in prices:
 #     l.append(i)
-# e = sorted(l)
-# print(l)
-# print(e)
-# print(l[::2])
-# print(l[::3])
-# n = 5
-# s = ''
-# for i in range(1,n+1):
-#     s += '0' + str(i)
-# print(s)
-# s = "0090089"
+# l1 = l + prices
+# for j in l1:
+#     for k in l1:
+#         print(k)
+prices = [1,2,3]
+money = 5
+# for i in prices:
+#     for j in prices:
+#         if i + j < money:
+#             s =
+#            print(i + j)
+#         else:
+#             print(money)
+# m1 = min(prices)
+# print(m1)
+# r = prices.remove(m1)
+# m2 = min(prices)
+# print(m2)
+# s = int(m1) + int(m2)
+# if s <= money:
+# emails = ["test.email+alex@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com"]
+# s = '@'
+# p = '+'
+# for i in emails:
+#     if p not in i:
+#         print(i)
+# nums = [-7,-3,2,3,11]
+# l1 = []
+# for i in nums:
+#     l1.append(i * i)
+# print(sorted(l1))
+# startTime = [9,8,7,6,5,4,3,2,1]
+# endTime = [10,10,10,10,10,10,10,10,10]
+# queryTime = 5
 # l = []
+# for i in startTime:
+#     for j in endTime:
+#         if j - i == queryTime:
+#             l.append(i)
+# print(len(l))
+# list1 = [1,2,3]
+# list2 = [3,2,7]
+#
+# # Check if both lists have the same length
+# if len(list1) == len(list2):
+#     difference = [list1[i] - list2[i] for i in range(len(list1))]
+#     print(difference)
+# else:
+#     print("Both lists must have the same length for element-wise difference.")
+# salary = [1000,2000,3000]
+# salary.remove(min(salary))
+# salary.remove(max(salary))
+# s = sum(salary)
+# av = s / len(salary)
+# print(av)
+# s = "codeleet"
+# indices = [4,5,6,7,0,2,1,3]
+# ss = ''
+# for i in indices:
+# #     ss += s[i]
+# # print(ss)
+#     print(s[i])
+# word1 = ["ab", "c"]
+# word2 = ["a", "bc"]
+# w1 = ''
+# for i in word1:
+#     w1 += i
+# print(w1)
+# w2 = ''
+# for j in word2:
+#     w2 += j
+# print(w1)
+# print(w1 == w2)
+# paragraph = "Bob hit a ball, the hit BALL flew far after it was hit."
+# banned = ["hit"]
+# l = paragraph.split()
+# for i in l:
+#     if l.count(i.lower()) > 1 and i not in banned:
+#         print(i.lower())
+# details = ["1313579440F2036","2921522980M5644"]
+# l = []
+# for i in details:
+#     l.append(i[11:13])
+# c = 0
+# for j in l:
+#     if int(j) > 60:
+#         c += 1
+# print(c)
+# title = "capiTalIze tHe titLe"
+# s = title.split()
+# s1 = ''
 # for i in s:
-#     l.append(int(i))
-# while 0 in l:
-#     l.remove(0)
-# print(l)
-# if l[0] - l[-1] == len(l) - 1:
+#     s1 += i.capitalize()
+# print(s1)
+# words = ["def","ghi"]
+# l = []
+# for i in words:
+#     if i == i[::-1]:
+#         l.append(i)
+# if len(l) > 0:
+#     print(l[0])
+# else:
+#     print('')
+# s ="sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s"
+# l = s.split()
+# l1 = []
+# for i in l:
+#     if i.isnumeric():
+#         l1.append(int(i))
+# l2 = sorted(l1)
+# for i in l1:
+#     if l1.count(i) > 1:
+#         print('false')
+# if l1 == l2:
 #     print('true')
 # else:
 #     print('false')
-# ------------------
 
-# ------------------
-# chars = ["a"]
-# s = set(chars)
-# l = sorted(list(s))
-# rs1 = []
-# for i in l:
-#     rs1.append(str(i))
-#     rs1.append(str(chars.count(i)))
-# for k in rs1:
-#     if chars.count(k) == 1:
-#         rs1.remove('1')
-# rs2 = (''.join(rs1))
-# rl = []
-# for h in rs2:
-#     rl.append(h)
-# print("Return",len(rl),',','and the first',len(rl) ,'characters of the input array should be: ',rl)
-# n = 7
-# s = ''
-# for i in range(1,n):
-#     s += '1'* i
-#     s += '2' * (i+1 )
-# l = s[0:n]
-# print(l.count('1'))
-# nums = [1,2,1,3,2,5]
-# r = []
-# for i in nums:
-#     if nums.count(i) == 1:
-#         r.append(i)
-# print(r)
-# nums = [0,0,1,1,1,1,2,3,3]
-# ma = len(nums)
-# nu1 = nums
-# for j in nu1:
-#     if nu1.count(j) > 2:
-#         nu1.remove(j)
-# mi = len(nu1)
-# print(ma,mi)
-# rl = ['_'] * (ma - mi)
-# print(len(nu1),',',nu1 + rl)
-# root = [0,1,2,0,0,0,0,1,1,1,1,2,2,2,2]
-# for i in root:
-#     for i in range(1,len(root)+1):
-#         print(root[7 * i : (7*i) + 2]) #= reversed(root[7 * i : (7*i) + 2])
-# print(root)
-# #[1,7,15]
-# #[1:3],[7:15]
-# nums = ["3","6","7","10"]
-# l = []
-# for i in nums:
-#     l.append(int(i))
-# s= sorted(l)
-# print(str(s[-4]))
-# nums = [991,338,38]
-# l = []
-# for i in nums:
-#     l.append(str(i))
-# s = sorted(l)
-# rl = []
-# for j in s:
-#     rl.append(int(j))
-# print(rl)
-# nums = [1,2,3,4]
-# queries = [[1,0],[-3,1],[-4,0],[2,3]]
-# for i in queries:
-#     nums[i[1]] += i[0]
-# print(nums)
-# s = "LeetcodeHelpsMeLearn"
-# spaces = [8,13,15]
-# # for i in spaces:
-# #     s[i] += ' '
-# r = ' '.join(spaces)
-# # print(r)
-# nums = [-1,1,0,-3,3]
-# l = []
-# p = 1
-# for i in nums:
-#     for j in range(0,len(nums)+1):
-#         print(i,j)
-#         # if i != nums[j]:
-#         #     p *= i
-#         #     l.append(p)
-# # for j in nums:
-# #     if j != 0:
-# #         l.append(int(p/j))
-# print(l)
-# #[24,12,8,6]
-# # 24/1 24/2 24/3 24/4
-# 24 12 8 6
-# l = []
-# matrix = [[1,2,3],[4,5,6],[7,8,9]]
-# for j in range(0,len(matrix)):
-#     for i in matrix:
-#         l.append(i[j])
-# l1 = []
-# for k in range(0,len(matrix)):
-#     l1.append(l[k*len(matrix):(k+1)*len(matrix)])
-# rl = []
-# for h in l1:
-#     rl.append(h[::-1])
-# print(rl)
-# nums = [3,6,9,1]
-# n1 = sorted(nums)
-# l = []
-# k = len(nums)
-# if len(nums) > 1:
-#     for j in range(0,k):
-#         if j < k -1:
-#              l.append(n1[j +1] - n1[j])
-#     print(max(l))
+# l = [3,2,4,1]
+# l1 = [1, 2, 3, 4]
+# l2 = sorted(l)
+# if l1 == l2:
+#     print('yes')
 # else:
-# #     print(nums[0])
-# words = ["i","love","leetcode","i","love","coding"]
-# k = 2
-# rl = []
+#     print('false')
+# l = [1,2,3,4,4]
+# for i in l:
+#     if l.count(i) > 1:
+#         print('false')
+# word = "xyxzxe"
+# ch = "z"
+# if ch not in word:
+#     print(word)
+# else:
+#     i = word.index(ch)
+#     fs = word[0:i + 1]
+#     r = fs[::-1]
+#     ss = word[i + 1:]
+#     print(r + ss)
+# s = "abccbaacz"
 # l = []
-# for i in words:
-#     l.append(words.count(i))
-# s = list(set(l))
-# s1 = s[::-1]
-# for j in s1:
-#     for d in words:
-#         if words.count(d) == j:
-#             pass
-#             rl.append(d)
-# rl1 = []
-# for h in rl:
-#     if h not in rl1:
-#         rl1.append(h)
-# print(rl1[0:k])
-# nums = [1]
-# k = 1
-# l = []
-# for i in nums:
-#     l.append(nums.count(i))
-# s = sorted(list(set(l)))
-# l1 = s[::-1]
-# rl = []
-# for j in l1:
-#     for k in nums:
-#         if nums.count(k) == j:
-#             rl.append(k)
-# rl1 = []
-# for h in rl:
-#     if h not in rl1:
-#         rl1.append(h)
-# print(rl1[0:k])
-# # print(l)
-# print(rl)
-# print(rl1)
-# print(rl1[0:k])
-# word = "ltcd"
-# s = ''
-# for i in range(len(word)):
-#     for j in range(i+1,len(word)+1):
-#         s += word[i:j]
-# c = 0
-# for h in s:
-#     if (h == 'a' or h == 'e' or h == 'i' or
-#         h == 'o' or h == 'u' or h == 'A' or
-#         h == 'E' or h == 'I' or h == 'O' or
-#         h == 'U'):
-#         c += 1
-# print(c)
-# nums = [-4,-5,-4]
-# n = sorted(nums)[::-1]
-# l = []
-# for i in n:
-#     if i < 0:
+# for i in s:
+#     if s.count(i) > 1:
 #         l.append(i)
-# for j in l:
-#     for k in l:
-#         if len(l) % 2 != 0:
-#             l.remove(k)
-# pl = []
-# for f in nums:
-#     if f > 1:
-#         pl.append(f)
-# rl = l + pl
-# pr = 1
-# for d in rl:
-#     pr *= d
-# print(pr)
-# nums = [1,3,6]
-# k = 2
+# print(l)
+# s = "foobar"
+# letter = "o"
+# if letter in s:
+#     print(round(s.count(letter)/ len(s) * 100))
+# else:
+#     print(0)
+# s = "anagram"
+# t = "nagaram"
+# s1 = sorted(s)
+# t1 = sorted(t)
+# print(s1)
+# print(t1)
+# print(s1 == t1)
+from datetime import datetime
+
+# Input date string
+# words = ["pay","attention","practice","attend"]
+# pref = "at"
+# c = 0
+# for i in words:
+#     if i[0:len(pref)] == pref:
+#         c += 1
+# print(c)
+# patterns = ["a","b","c"]
+# word = "aaaaabbbbb"
+# c = 0
+# for i in patterns:
+#     if i in word:
+#         c += 1
+# print(c)
+# s = ""
+# t = "y"
+# for i in t:
+#     if i not in s:
+#         print(i)
+# nums = [1,2]
+# s = set(nums)
+# s.remove(max(s))
+# s.remove(max(s))
+# l = []
+# if len(nums) < 3:
+#     print(max(nums))
+# else:
+#     for i in s:
+#         l.append(i)
+#     print(l[0])
+# nums = [5,20,66,1314]
+# c1 = 0
+# c2 = 0
+# for i in nums:
+#     if i < 0:
+#         c1 += 1
+# for j in nums:
+#     if j > 0:
+#         c2 += 1
+# l = [c1,c2]
+# print(max(l))
+# grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]]
+# c = 0
+# for i in grid:
+#     for j in i:
+#         if j < 1:
+#             c += 1
+# print(c)
+# words = ["ab","ba","cc"]
+# c = 0
+# for i in words:
+#     for j in words:
+#         if i == j[::-1] and i != j:
+#             c += 1
+# if c == 0:
+#     print(0)
+# else:
+#     print(int(c/2))
+# nums = [13,25,83,77]
+# s  = ''
 # l = []
 # for i in nums:
-#     if i > k:
-#         l.append(i - k)
-#     else:
-#         l.append(i + k)
-# print(max(l)-min(l))
-# nums = [4,3,6,16,8,2]
-# c = 1
-# for i in set(nums):
-#     if i * i in nums:
-#         c += 1
-# if c == 1:
-#     print(-1)
-# else:
-#     print(c)
-# nums = [1,2]
-# operations = [[1,3],[2,1],[3,2]]
-# for i,j in zip(nums,operations):
-#     if j[0] in nums:
-#         nums[nums.index(j[0])] = j[1]
-# print(nums)
-# changed = [6,3,0,1]
-# s = changed
-# l1 = [i for i in s[0:int(len(s)/2)]]
-# l2 = [j for j in s[int(len(s)/2):]]
-# rl = []
-# for i in l1:
-#     rl.append(i * 2)
-# if rl == l2:
-#     print(l1)
-# else:
-#     print([])
-# s = "abcde"
-# s2 = "abcdefghijklmnopqrstuvwxyz"
-# l = []
-# for i in range(0,10):
-#     for j in range(0, 10):
-#         if s[i:j] in s2:
-#             l.append(s[i:j])
-# l1 = []
-# for k in l:
-#     l1.append(len(k))
-# print(max(l1))
-# s = "aabccabba"
-# s1 = ''
-# for i in range(0,len(s)-1):
-#     if s[i] != s[0-(i+1)]:
-#          s1 += s[i]
-# print(s1)
-# word1 = "sea"
-# word2 = "eat"
-# c = 0
-# for i in word1:
-#     if i in word2:
-#         c += 1
-# print(c)
-# s = "deeedbbcccbdaa"
-# k = 3
-# l  = set(s)
-# l1 = []
-# for i in l:
-#      l1.append(i * k)
-# print(l1)
-# x = 3
-# y = 5
-# bound = 15
-# l = []
-# for i in range(0,y +1):
-#     for j in range(0,y+1):
-#         l.append(x ** i+y **j)
-# s = sorted(list(set(sorted(l))))
-# rl = [d for d in s if d <= bound]
-# print(rl)
-# n = 1
-# c = 0
-# for i in range(0,10**n):
-#     if len(str(i)) == len(set(str(i))):
-#         c += 1
-# print(c)
-# nums = [2,3,5]
-# l = []
-# for i in range(0,len(nums)):
+#     s += str(i)
+# for j in s:
+#     l.append(int(j))
+# print(l)
+# d = {1:'abc',7 : 'hui',2: 'fdv'}
+# print(sorted(d))
+# nums = [5,5,5]
+# k = 2
+# s = 0
+# m = max(nums)
+# for i in range(m,m + k):
+#     s += i
+# print(s)
+# nums = [0,1,4,6,7,10]
+# diff = 3
+# for i in nums:
 #     for j in nums:
-#        l.append(abs(nums[i] - j))
-# l1 = []
-# for h in range(0,len(nums)):
-#         l1.append(sum(l[(h * len(nums)):((h+1)*len(nums))]))
-# print(l1)
-# arr1 = [1,1,1,1,1]
-# arr2 = [1,0,1]
-# a1 = ''
-# for i in arr1:
-#     a1 += str(i)
-# print(a1)
-# a2 = ''
-# for j in arr2:
-#     a2 += str(j)
-# print(a2)
-# print(int(a1,2))
-# print()
-
+#         if i - j == diff:
+#             print(i)
+# nums = [1,2,5,2,3]
+# target = 2
+# nums.sort()
+# print([i for i,x in enumerate(nums) if x == target])
+# words1 = ["a","ab"]
+# words2 = ["a","a","a","ab"]
+# l = []
+# for i in words1:
+#     for j in words2:
+#         if i == j:
+#             l.append(i)
+# l2 = []
+# for j in l:
+#     if l.count(j) == 1:
+#         l2.append(j)
+# print(len(l2))
